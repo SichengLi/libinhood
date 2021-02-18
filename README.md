@@ -1,9 +1,9 @@
 # libinhood
 
 ## Install
-git clone https://github.com/SichengLi/libinhood.git
-cd libinhood
-sudo python3 setup.py install
+- git clone https://github.com/SichengLi/libinhood.git
+- cd libinhood
+- sudo python3 setup.py install
 
 ## Usage
 ### placeStopLossOrderForAllYourStocks.py
