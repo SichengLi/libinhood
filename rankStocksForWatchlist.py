@@ -67,7 +67,7 @@ def get_weighted_EM_slope_for_one_line(line):
     sum = 0
     for i in range(len(line) - 1):
         weight = math.exp(len(line) - 1 - i)
-        sum = sum + (line[i] - line[i + 1]) * weight
+        sum = sum + ((line[i] - line[i + 1]) / line[i + 1]) * weight
     return sum
 
 def get_weighted_EM_slope_for_all_lines(line_0, line_1, line_2):
@@ -150,7 +150,7 @@ def get_final_scores(a, b):
     for symbol in a:
         if symbol not in final_dict:
             final_dict[symbol] = 0
-        final_dict[symbol] = final_dict[symbol] + count * 1.2
+        final_dict[symbol] = final_dict[symbol] + count * 1.1
         count = count - 1
 
     count = length
